@@ -1,1 +1,107 @@
 /* For Weather Application Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Kavoon', sans-serif;
+    background-color: #f0f8ff;
+    color: #00008B;
+}
+  
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+:root{
+    --nav-color: #FF6B3B;
+    --text-color: #f5fffa;
+}
+
+nav{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    align-items: center;
+    
+}
+.inputsearch{
+    display: flex;
+    
+    gap: 25px;
+}
+input{
+    padding: 7px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid var(--nav-color);
+    border-radius: 7px;
+}
+
+#search{
+    padding: 6px;
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    border: 2px solid ;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 75px;
+}
+
+#search:hover{
+    background-color: #f5fffa;
+    color: var(--nav-color);
+    transition: 0.3s;
+}
+
+/* For Weather Container */
+.weatherContainer{
+    width: 350px;
+    height: 300px;
+    /* border: 3px solid var(--text-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.weatherContainer:hover{
+    cursor: pointer;
+    scale: 1.15;
+    transition: 1s;
+    box-shadow: 0 0 5px var(--text-color), 0 0 10px var(--text-color), 0 0 15px var(--text-color), 0 0 20px var(--text-color), 0 0 25px var(--text-color), 0 0 30px var(--text-color), 0 0 35px var(--text-color);
+}
+
+.weather-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 577px;
+    background-color: var(--nav-color);
+    background: url(https://cdn.pixabay.com/photo/2023/11/20/18/21/sunset-8401670_640.jpg) no-repeat center center/cover;
+}
+
+#locationname{
+    color: var(--text-color);
+    font-size: 40px;
+}
+
+.weather-info p{
+    margin: 25px 0;
+    color: var(--text-color);
+    font-size: 22px;
+}
